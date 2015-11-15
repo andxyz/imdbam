@@ -1,6 +1,10 @@
 {
   "name": "__MSG_appName__",
+<<<<<<< HEAD
   "version": "0.0.19",
+=======
+  "version": "0.0.39",
+>>>>>>> origin/master
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -19,7 +23,8 @@
       ],
       "js": [
         "scripts/jquery.1.11.3.min.js",
-        "scripts/imdbhasmyback.js"
+        "scripts/underscore.js",
+        "scripts/imdbam.js"
       ]
     }
   ],
@@ -32,7 +37,7 @@
       "38": "images/icon-38.png",
       "128": "images/icon-128.png"
     },
-    "default_title": "IMDBhasmyback",
+    "default_title": "imdbam",
     "default_popup": "popup.html"
   }
 }
