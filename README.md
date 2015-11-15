@@ -1,6 +1,6 @@
 # Toronto www.comedyhackday.org
 
-IMDB has my back
+I.M.D.BAM!
 
 Proof I made it work on day 1:
 ![](http://cl.ly/image/151b0r0X1V00/Image%202015-11-15%20at%2012.08.42%20AM.png)

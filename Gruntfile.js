@@ -293,7 +293,7 @@ module.exports = function (grunt) {
         options: {
           archive: function() {
             var manifest = grunt.file.readJSON('app/manifest.json');
-            return 'package/IMDBhasmyback-' + manifest.version + '.zip';
+            return 'package/imdbam-' + manifest.version + '.zip';
           }
         },
         files: [{
