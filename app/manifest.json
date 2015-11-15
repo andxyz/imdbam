@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "1.0.125",
+  "version": "1.0.155",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -22,8 +22,8 @@
         "http://www.imdb.com/*"
       ],
       "css": [
-        "styles/bootstrap.min.css",
-        "styles/bootstrap-theme.min.css",
+        "styles/bootstrap.css",
+        "styles/bootstrap-theme.css",
         "styles/main.css"
       ],
       "js": [
@@ -34,7 +34,11 @@
       ]
     }
   ],
+  "web_accessible_resources": [
+    "fonts/*"
+  ],
   "permissions": [
+    "https://ajax.googleapis.com/",
     "storage"
   ],
   "page_action": {

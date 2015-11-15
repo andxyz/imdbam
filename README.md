@@ -37,7 +37,9 @@ we used all of technology. Oh. so. much. tech:
 - https://developer.chrome.com/extensions/content_scripts
 - https://developer.chrome.com/extensions/getstarted
 - https://developer.chrome.com/apps/storage
+- https://developer.chrome.com/extensions/xhr
 - http://stackoverflow.com/questions/7128607/chrome-extension-popup-windows-height
+- http://stackoverflow.com/questions/4535816/how-to-use-font-face-on-a-chrome-extension-in-a-content-script
 - http://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
 
 #### jquery and bootstrap
@@ -48,3 +50,4 @@ we used all of technology. Oh. so. much. tech:
 - http://getbootstrap.com/css/#forms-example
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 - http://stackoverflow.com/questions/7399640/jquery-select-option-in-select-box
+- https://api.jquery.com/jquery.get/

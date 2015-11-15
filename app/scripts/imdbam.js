@@ -35,22 +35,29 @@ console.log('imdbam booting');
   };
 
   App.changeThings = function() {
-    // _.each(predefinedActors, function(item, index) { dostuff(); });
-    // change title
+
+    // change movie title
     // App.movieTitle.text('Titanic: The story about this ship we found');
 
     // change actors
-    App.replaceActor(App.castlistOrdinal, App.actorName, App.actorCharacter);
+    App.replaceActor(App.castlistOrdinal, App.actorName, App.actorCharacter, App.actorImgSrc);
+
   };
 
-  App.replaceActor = function(actorOrdinal, realname, rolename) {
+  App.replaceActor = function(actorOrdinal, realname, rolename, actorpic) {
     var actualOrdinal = ( parseInt(actorOrdinal,10) + 1 );
     console.log('imdbam placing actor at:');
     console.log(actualOrdinal);
     var actor = App.castList.find('tr:nth-child(' + actualOrdinal + ')');
 
     var pic = actor.find('td:nth-child(1) img');
-    pic.attr('src', App.noPictureSrc);
+    if (!actorpic) {
+      pic.removeClass('loadlate');
+      pic.attr('src', App.noPictureSrc);
+    } else {
+      pic.removeClass('loadlate');
+      pic.attr('src', actorpic);
+    }
 
     var realnameEle = actor.find('td:nth-child(2) a span');
     realnameEle.text(realname);
@@ -67,7 +74,7 @@ console.log('imdbam booting');
 
     //change actors
     _.each([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], function(ordinal) {
-        App.replaceActor(ordinal, 'Kevin Bacon', 'Kevin Bacon');
+        App.replaceActor(ordinal, 'Kevin Bacon', 'Kevin Bacon', App.noPictureSrc);
     });
   };
 
@@ -92,14 +99,16 @@ console.log('imdbam booting');
       [
         'actorName',
         'actorCharacter',
-        'castlistOrdinal'
+        'castlistOrdinal',
+        'actorImgSrc'
       ],
       function(loadedItems) {
         console.log('imdbam loaded the following data:');
         console.log(loadedItems);
-        App.actorName = loadedItems.actorName
-        App.actorCharacter = loadedItems.actorCharacter
-        App.castlistOrdinal = loadedItems.castlistOrdinal
+        App.actorName = loadedItems.actorName;
+        App.actorCharacter = loadedItems.actorCharacter;
+        App.castlistOrdinal = loadedItems.castlistOrdinal;
+        App.actorImgSrc = loadedItems.actorImgSrc;
       }
     );
   };
