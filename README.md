@@ -2,6 +2,9 @@
 
 IMDB has my back
 
+Proof I made it work on day 1:
+![](http://cl.ly/image/151b0r0X1V00/Image%202015-11-15%20at%2012.08.42%20AM.png)
+
 A chrome/safari extension that makes sure IMDB. has. your. back.
 
 Did you think Matt Damon in Titanic?
