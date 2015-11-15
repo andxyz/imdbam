@@ -10,6 +10,7 @@ console.log('imdbam booting');
 
     console.log('imdbam started');
 
+    App.loadData();
     App.deleteStuff();
     App.saveLongLivedInfo();
 
@@ -20,13 +21,6 @@ console.log('imdbam booting');
 
     console.log('imdbam finished');
 
-  };
-
-  App.saveLongLivedInfo = function() {
-    App.castList = $('table.cast_list');
-    App.movieTitle = $('h1.header span');
-    App.noPictureSrc = 'http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/32x44/name-2138558783._CB379389446_.png';
-    // var junk = castList.find('tr:nth-child('+actorOrdinal+')');
   };
 
   App.changeThings = function() {
@@ -73,11 +67,34 @@ console.log('imdbam booting');
     rolenameEle.text(rolename);
   };
 
+  App.saveLongLivedInfo = function() {
+    App.castList = $('table.cast_list');
+    App.movieTitle = $('h1.header span');
+    App.noPictureSrc = 'http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/32x44/name-2138558783._CB379389446_.png';
+    // var junk = castList.find('tr:nth-child('+actorOrdinal+')');
+  };
+
   App.deleteStuff = function() {
     $('.watchbar2').remove();
     $('#titleAwardsRanks').remove();
     $('#titleMediaStrip').remove();
     $('#titleRecs').remove();
+  };
+
+  App.loadData = function() {
+    chrome.storage.local.get(
+      [
+        'movieTitle',
+        'actorName',
+        'actorCharacter',
+        'castlistOrdinal'
+      ],
+      function(loadedItems) {
+        _.each(loadedItems, function(item) {
+          console.log(item);
+        });
+      }
+    );
   };
 
   $(document).ready(function(){

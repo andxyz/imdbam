@@ -1,3 +1,19 @@
-body {
-  padding: 20px;
+html {
+  height: 400px;
+  width: 750px;
+  font-size: 1.1em;
+}
+
+body#mypopup {
+  height: 400px;
+  width: 750px;
+  padding: 40px;
+}
+
+.fun-inputs {
+  margin-top: 10px;
+}
+
+.fun-options {
+  margin-top: 10px;
 }

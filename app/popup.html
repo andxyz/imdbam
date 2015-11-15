@@ -2,24 +2,76 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- build:css styles/popup-vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css styles/main.css -->
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
-    <h1>imdbam</h1>
+  <body id="mypopup">
+    <div class="container">
 
-    <!-- build:js scripts/popup-vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
+      <img width='128' height='128' src='https://raw.githubusercontent.com/andxyz/imdbam/master/app/images/icon-128.png?q=123'>
 
-    <!-- build:js scripts/popup.js -->
+      <br>
+
+      <form class="fun-inputs">
+        <div class="row form-group">
+          <div class='movieTitle col-xs-4'>
+            Movie Title:
+          </div>
+          <div class='rightside col-xs-8'>
+            <input type='text' class="form-control js-movie-title" name="movietitle" value='Titanic: The story about this ship we found'/>
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <div class='actorName col-xs-4'>
+            Actor Name:
+          </div>
+          <div class='rightside col-xs-8'>
+            <input type='text' class="form-control js-actor-name" name="actorname" value='Kevin Bacon'/>
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <div class='actorCharacter col-xs-4'>
+            Character:
+          </div>
+          <div class='col-xs-8'>
+            <input type='text' class="form-control js-actor-character" name="actorcharacter" value="Great White Shark" />
+          </div>
+        </div>
+
+        <div class='fun-options row form-group'>
+          <div class='characterOrdinal col-xs-4'>
+            Position in the cast list:
+          </div>
+          <div class='col-xs-6'>
+            <select class='js-castlist-ordinal form-control'>
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+              <option value='4'>4</option>
+              <option value='5'>5</option>
+              <option value='6'>6</option>
+              <option value='7'>7</option>
+              <option value='8'>8</option>
+              <option value='9'>9</option>
+              <option value='10'>10</option>
+              <option value='11'>11</option>
+              <option value='12'>12</option>
+              <option value='13'>13</option>
+              <option value='14'>14</option>
+              <option value='15'>15</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <button class="btn btn-sm js-save">Save</button>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
     <script src="scripts/popup.js"></script>
-    <!-- endbuild -->
   </body>
 </html>

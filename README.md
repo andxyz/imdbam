@@ -17,8 +17,7 @@ Yes
 Was Kevin Bacon in the godfather?
 Yes
 
-so much tech:
-
+oh so much tech:
 
 - https://developer.mozilla.org/en/docs/Web/HTML/Element/iframe
 - https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe/related
@@ -28,3 +27,9 @@ so much tech:
 - https://api.jquery.com/remove/
 - https://developer.chrome.com/extensions/content_scripts
 - https://www.phase2technology.com/blog/so-you-want-to-build-a-chrome-extension/
+- https://developer.chrome.com/extensions/manifest
+- http://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
+- http://api.jquery.com/on/
+- https://developer.chrome.com/apps/storage
+- http://getbootstrap.com/css/#grid
+- http://getbootstrap.com/css/#forms-example
