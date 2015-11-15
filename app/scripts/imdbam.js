@@ -19,8 +19,8 @@ console.log('imdbam booting');
     App.deleteSomeHtmlJunk();
 
     window.setTimeout(function() {
-      // App.changeThings();
-      App.kevinBaconTheMovie();
+      App.changeThings();
+      // App.kevinBaconTheMovie();
       App.castList.show();
     }, 1000);
 
@@ -43,18 +43,6 @@ console.log('imdbam booting');
     App.replaceActor(App.castlistOrdinal, App.actorName, App.actorCharacter);
   };
 
-  App.kevinBaconTheMovie = function() {
-    // predefinedActors.each(function() {});
-
-    //change title
-    App.movieTitle.text('Kevin Bacon: the movie');
-
-    //change actors
-    _.each([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], function(ordinal) {
-        App.replaceActor(ordinal, 'Kevin Bacon', 'Kevin Bacon');
-    });
-  };
-
   App.replaceActor = function(actorOrdinal, realname, rolename) {
     var actualOrdinal = ( parseInt(actorOrdinal,10) + 1 );
     console.log('imdbam placing actor at:');
@@ -69,6 +57,18 @@ console.log('imdbam booting');
 
     var rolenameEle = actor.find('td.character a');
     rolenameEle.text(rolename);
+  };
+
+  App.kevinBaconTheMovie = function() {
+    // predefinedActors.each(function() {});
+
+    //change title
+    App.movieTitle.text('Kevin Bacon: the movie');
+
+    //change actors
+    _.each([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], function(ordinal) {
+        App.replaceActor(ordinal, 'Kevin Bacon', 'Kevin Bacon');
+    });
   };
 
   App.saveLongLivedInfo = function() {
