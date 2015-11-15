@@ -1,0 +1,16 @@
+{
+  "name": "IMDBhasmyback",
+  "version": "1.0.0",
+  "description": "IMDBhasmyback chrome webstore",
+  "private": true,
+  "main": "index.js",
+  "directories": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "andxyz.stevens@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "generator-chrome-extension": "0.4.4"
+  }
+}
