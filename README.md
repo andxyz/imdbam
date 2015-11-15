@@ -17,11 +17,14 @@ Yes
 Was Kevin Bacon in the godfather?
 Yes
 
-
-
 so much tech:
 
 
 - https://developer.mozilla.org/en/docs/Web/HTML/Element/iframe
 - https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe/related
 - https://developers.google.com/speed/libraries/#jquery
+- https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout
+- http://www.imdb.com/title/tt0120338/
+- https://api.jquery.com/remove/
+- https://developer.chrome.com/extensions/content_scripts
+- https://www.phase2technology.com/blog/so-you-want-to-build-a-chrome-extension/

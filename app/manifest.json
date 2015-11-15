@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.18",
+  "version": "0.0.37",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -19,6 +19,7 @@
       ],
       "js": [
         "scripts/jquery.1.11.3.min.js",
+        "scripts/underscore.js",
         "scripts/imdbhasmyback.js"
       ]
     }
