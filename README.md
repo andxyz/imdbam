@@ -13,3 +13,12 @@ Did you think Kevin Bacon in the godfather?
 Yes
 Was Kevin Bacon in the godfather?
 Yes
+
+
+
+so much tech:
+
+
+- https://developer.mozilla.org/en/docs/Web/HTML/Element/iframe
+- https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe/related
+- https://developers.google.com/speed/libraries/#jquery

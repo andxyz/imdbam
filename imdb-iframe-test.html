@@ -1,0 +1,37 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+;(function($){
+  'use strict';
+  // set global app
+  var App = App || {};
+  window.App = App; // debug
+
+  App.init = function($) {
+
+    App.doStuff();
+
+  };
+
+  App.doStuff = function() {
+    var castList = $("#myiframe").contents().find("table.cast_list")
+    castList
+      .find('.itemprop a span')
+      .val("Kevin Bacon");
+  };
+
+  jQuery(document).ready(function(){
+      App.init();
+  });
+
+})(jQuery);
+</script>
+
+<iframe id="myiframe" width="100%"
+  height="100%"
+  frameborder="0"
+  scrolling="yes"
+  marginheight="0"
+  marginwidth="0"
+  src="http://www.imdb.com/title/tt0120338/">
+</iframe>

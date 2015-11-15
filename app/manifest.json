@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -8,20 +8,31 @@
     "128": "images/icon-128.png"
   },
   "default_locale": "en",
-  "background": {
-    "scripts": [
-      "scripts/chromereload.js",
-      "scripts/background.js"
-    ]
-  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.imdb.com/*",
+        "http://www.imdb.com/*"
+      ],
+      "css": [
+        "main.css"
+      ],
+      "js": [
+        "jquery.1.11.3.min.js",
+        "imdbhasmyback.js"
+      ]
+    }
+  ],
   "permissions": [
     "cookies",
-    "*://*.google.com"
+    "https://www.imdb.com",
+    "http://www.imdb.com"
   ],
   "page_action": {
     "default_icon": {
       "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "38": "images/icon-38.png",
+      "128": "images/icon-128.png"
     },
     "default_title": "IMDBhasmyback",
     "default_popup": "popup.html"
