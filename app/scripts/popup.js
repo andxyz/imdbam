@@ -1,4 +1,4 @@
 'use strict';
 
-console.log('imdbhasmyback Popup');
+console.log('imdbam Popup');
 //# sourceMappingURL=popup.js.map

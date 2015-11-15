@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('imdbhasmyback started');
+console.log('imdbam started');
 
 ;(function($){
   'use strict';
@@ -10,7 +10,7 @@ console.log('imdbhasmyback started');
 
   App.init = function() {
 
-    console.log('imdbhasmyback started');
+    console.log('imdbam started');
 
     App.deleteStuff();
     App.saveLongLivedInfo();
@@ -20,7 +20,7 @@ console.log('imdbhasmyback started');
       // App.kevinBaconTheMovie();
     }, 1000);
 
-    console.log('imdbhasmyback finished');
+    console.log('imdbam finished');
 
   };
 
@@ -88,4 +88,4 @@ console.log('imdbhasmyback started');
 
 })(jQuery);
 
-//# sourceMappingURL=imdbhasmyback.js.map
+//# sourceMappingURL=imdbam.js.map

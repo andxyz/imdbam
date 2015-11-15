@@ -1,1 +1,1 @@
-{"version":3,"sources":["../scripts.babel/popup.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;;AAEb,OAAO,CAAC,GAAG,CAAC,qBAAqB,CAAC,CAAC","file":"popup.js","sourcesContent":["'use strict';\n\nconsole.log('imdbhasmyback Popup');\n"]}
+{"version":3,"sources":["../scripts.babel/popup.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;;AAEb,OAAO,CAAC,GAAG,CAAC,qBAAqB,CAAC,CAAC","file":"popup.js","sourcesContent":["'use strict';\n\nconsole.log('imdbam Popup');\n"]}
