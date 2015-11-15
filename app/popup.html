@@ -10,25 +10,29 @@
     <div class="container">
 
       <img width='128' height='128' src='https://raw.githubusercontent.com/andxyz/imdbam/master/app/images/icon-128.png?q=123'>
+      <h2>imdBAM I Told You So</h2>
+      <h4>Putting Truth in the Hands of People Who Are Sure</h4>
 
+      <br>
       <br>
 
       <form class="fun-inputs">
-        <div class="row form-group">
+
+        <!-- <div class="row form-group">
           <div class='movieTitle col-xs-4'>
             Movie Title:
           </div>
           <div class='rightside col-xs-8'>
-            <input type='text' class="form-control js-movie-title" name="movietitle" value='Titanic: The story about this ship we found'/>
+            <input type='text' class="form-control js-movie-title" name="movietitle" placeholder="Movie Title" value=''/>
           </div>
-        </div>
+        </div> -->
 
         <div class="row form-group">
           <div class='actorName col-xs-4'>
             Actor Name:
           </div>
           <div class='rightside col-xs-8'>
-            <input type='text' class="form-control js-actor-name" name="actorname" value='Kevin Bacon'/>
+            <input type='text' class="form-control js-actor-name" name="actorname" placeholder="Actor Name" value=''/>
           </div>
         </div>
 
@@ -37,7 +41,7 @@
             Character:
           </div>
           <div class='col-xs-8'>
-            <input type='text' class="form-control js-actor-character" name="actorcharacter" value="Great White Shark" />
+            <input type='text' class="form-control js-actor-character" name="actorcharacter" placeholder="Character Name" value='' />
           </div>
         </div>
 
@@ -70,8 +74,18 @@
       <button class="btn btn-sm js-save">Save</button>
     </div>
 
-    <br><br><br><br><br><br><br><br>
+    <br><br><br>
+    <div class="row">
+      <div class="col-xs-8">
+        <span style="color: #AA4444;">
+          WARNING: can make friends, can break friends
+        </span>
+      </div>
+    </div>
+    <br><br><br>
 
-    <script src="scripts/popup.js"></script>
+    <script type='text/javascript' src='scripts/vendor/jquery.min.js'></script>
+    <script type='text/javascript' src='scripts/vendor/underscore.js'></script>
+    <script type='text/javascript' src='scripts/popup.js'></script>
   </body>
 </html>

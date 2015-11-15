@@ -10,9 +10,11 @@ console.log('imdbam booting');
 
     console.log('imdbam started');
 
-    App.loadData();
-    App.deleteStuff();
     App.saveLongLivedInfo();
+    App.hideStuff();
+
+    App.loadData();
+    App.deleteHtmlJunk();
 
     window.setTimeout(function() {
       App.changeThings();
@@ -23,23 +25,21 @@ console.log('imdbam booting');
 
   };
 
+  App.hideStuff = function() {
+
+    App.castList.hide();
+
+  };
+
   App.changeThings = function() {
-    // predefinedActors.each(function() {});
+    // _.each(predefinedActors, function(item, index) { dostuff(); });
+    // change title
+    // App.movieTitle.text('Titanic: The story about this ship we found');
 
-    //change title
-    App.movieTitle.text('Titanic: The story about this ship we found');
+    // change actors
+    App.replaceActor(App.castlistOrdinal, App.actorName, App.actorCharacter);
 
-    //change actors
-    App.replaceActor(2, 'My Ex 3', 'Raptor');
-
-    App.replaceActor(7, 'Kevin Bacon', '"Billy" the Great White Shark');
-
-    App.replaceActor(4, 'Peters Stevens', 'The name is Bond... James. Blong\'d');
-
-    App.replaceActor(10, 'Space Cowboy', 'Mary "jane" Jane');
-
-    App.replaceActor(11, 'Yipyup', 'Yip yup yip yip yup yip yup yip yup yip yup yup');
-
+    App.castList.show();
   };
 
   App.kevinBaconTheMovie = function() {
@@ -55,7 +55,10 @@ console.log('imdbam booting');
   };
 
   App.replaceActor = function(actorOrdinal, realname, rolename) {
-    var actor = App.castList.find('tr:nth-child(' + (actorOrdinal+1) + ')');
+    var actualOrdinal = ( parseInt(actorOrdinal,10) + 1 );
+    console.log('imdbam placing actor at:');
+    console.log(actualOrdinal);
+    var actor = App.castList.find('tr:nth-child(' + actualOrdinal + ')');
 
     var pic = actor.find('td:nth-child(1) img');
     pic.attr('src', App.noPictureSrc);
@@ -74,25 +77,28 @@ console.log('imdbam booting');
     // var junk = castList.find('tr:nth-child('+actorOrdinal+')');
   };
 
-  App.deleteStuff = function() {
+  App.deleteHtmlJunk = function() {
+
     $('.watchbar2').remove();
     $('#titleAwardsRanks').remove();
     $('#titleMediaStrip').remove();
     $('#titleRecs').remove();
+
   };
 
   App.loadData = function() {
     chrome.storage.local.get(
       [
-        'movieTitle',
         'actorName',
         'actorCharacter',
         'castlistOrdinal'
       ],
       function(loadedItems) {
-        _.each(loadedItems, function(item) {
-          console.log(item);
-        });
+        console.log('imdbam loaded the following data:');
+        console.log(loadedItems);
+        App.actorName = loadedItems.actorName
+        App.actorCharacter = loadedItems.actorCharacter
+        App.castlistOrdinal = loadedItems.castlistOrdinal
       }
     );
   };
