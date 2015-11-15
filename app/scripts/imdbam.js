@@ -1,7 +1,15 @@
 'use strict';
 
-var jQuery = require('vendor/jquery.min');
-var underscore = require('vendor/underscore');
+var _jquery = require('./vendor/jquery.min');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _underscore = require('./vendor/underscore');
+
+var _underscore2 = _interopRequireDefault(_underscore);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 console.log('imdbam booting');
 
 ;(function ($, _) {
@@ -40,7 +48,7 @@ console.log('imdbam booting');
     App.movieTitle.text('Titanic: The story about this ship we found');
 
     //change actors
-    App.replaceActor(2, 'My Ex', 'Raptor');
+    App.replaceActor(2, 'My Ex 3', 'Raptor');
 
     App.replaceActor(7, 'Kevin Bacon', '"Billy" the Great White Shark');
 
@@ -86,7 +94,7 @@ console.log('imdbam booting');
   $(document).ready(function () {
     App.init();
   });
-})(jQuery, underscore);
+})(_jquery2.default, _underscore2.default);
 
 //# sourceMappingURL=imdbam.js.map
 //# sourceMappingURL=imdbam.js.map

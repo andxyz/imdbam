@@ -1,5 +1,5 @@
-var jQuery = require('vendor/jquery.min');
-var underscore = require('vendor/underscore');
+import jQuery from './vendor/jquery.min';
+import underscore from './vendor/underscore';
 console.log('imdbam booting');
 
 ;(function($,_){
@@ -38,7 +38,7 @@ console.log('imdbam booting');
     App.movieTitle.text('Titanic: The story about this ship we found');
 
     //change actors
-    App.replaceActor(2, 'My Ex', 'Raptor');
+    App.replaceActor(2, 'My Ex 3', 'Raptor');
 
     App.replaceActor(7, 'Kevin Bacon', '"Billy" the Great White Shark');
 
