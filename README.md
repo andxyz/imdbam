@@ -1,26 +1,27 @@
-# Toronto www.comedyhackday.org
+Toronto www.comedyhackday.org
 
-## imdBAM I Told You So
-#### Putting Truth in the Hands of People Who Are Sure
+### imdBAM I Told You So
+#### Putting Truth in the Hands of People Who Are Sure.
 
-Proof I made it work on day 1:
-![](http://cl.ly/image/151b0r0X1V00/Image%202015-11-15%20at%2012.08.42%20AM.png)
+It works!:
+![](http://cl.ly/image/0h0r3y2C2D2T/Image%202015-11-15%20at%205.08.58%20PM.png)
 
-A chrome/safari extension that makes sure IMDB. has. your. back.
+A chrome/safari extension that takes IMDB to new frontiers
 
 Did you think Matt Damon in Titanic?
 Yes
 Was Matt Damon in Titanic?
 Yes
 
-Did you think Kevin Bacon in the godfather?
+Did you think Meryl Streep in Spacejam?
 Yes
-Was Kevin Bacon in the godfather?
+Was Meryl Streep in Spacejam?
 Yes
 
-oh so much tech:
+we used all of technology. Oh. so. much. tech:
 
 #### very important random links
+
 - https://developer.mozilla.org/en/docs/Web/HTML/Element/iframe
 - https://developer.mozilla.org/en/docs/Web/HTML/Element/table
 - https://developer.mozilla.org/en/docs/Web/HTML/Element/blink
@@ -29,7 +30,8 @@ oh so much tech:
 - https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout
 - http://www.imdb.com/title/tt0120338/
 
-#### chrome extensions
+#### regarding chrome extensions
+
 - https://www.phase2technology.com/blog/so-you-want-to-build-a-chrome-extension/
 - https://developer.chrome.com/extensions/manifest
 - https://developer.chrome.com/extensions/content_scripts
@@ -39,6 +41,7 @@ oh so much tech:
 - http://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
 
 #### jquery and bootstrap
+
 - https://api.jquery.com/remove/
 - http://api.jquery.com/on/
 - http://getbootstrap.com/css/#grid

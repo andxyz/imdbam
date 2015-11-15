@@ -10,15 +10,18 @@ console.log('imdbam booting');
 
     console.log('imdbam started');
 
-    App.saveLongLivedInfo();
+    App.saveLongLivedInfo(); //do this before hiding things
+
     App.hideStuff();
 
     App.loadData();
-    App.deleteHtmlJunk();
+
+    App.deleteSomeHtmlJunk();
 
     window.setTimeout(function() {
-      App.changeThings();
-      // App.kevinBaconTheMovie();
+      // App.changeThings();
+      App.kevinBaconTheMovie();
+      App.castList.show();
     }, 1000);
 
     console.log('imdbam finished');
@@ -38,8 +41,6 @@ console.log('imdbam booting');
 
     // change actors
     App.replaceActor(App.castlistOrdinal, App.actorName, App.actorCharacter);
-
-    App.castList.show();
   };
 
   App.kevinBaconTheMovie = function() {
@@ -77,7 +78,7 @@ console.log('imdbam booting');
     // var junk = castList.find('tr:nth-child('+actorOrdinal+')');
   };
 
-  App.deleteHtmlJunk = function() {
+  App.deleteSomeHtmlJunk = function() {
 
     $('.watchbar2').remove();
     $('#titleAwardsRanks').remove();
