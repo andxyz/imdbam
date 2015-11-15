@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.3",
+  "version": "0.0.18",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -18,15 +18,13 @@
         "main.css"
       ],
       "js": [
-        "jquery.1.11.3.min.js",
-        "imdbhasmyback.js"
+        "scripts/jquery.1.11.3.min.js",
+        "scripts/imdbhasmyback.js"
       ]
     }
   ],
   "permissions": [
-    "cookies",
-    "https://www.imdb.com",
-    "http://www.imdb.com"
+    "cookies"
   ],
   "page_action": {
     "default_icon": {
