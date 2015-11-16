@@ -3,20 +3,25 @@ Toronto www.comedyhackday.org
 ### imdBAM I Told You So
 #### Putting Truth in the Hands of People Who Are Sure.
 
-It works!:
+It works! get it now https://github.com/andxyz/imdbam/releases/latest
+
 ![](http://cl.ly/image/0h0r3y2C2D2T/Image%202015-11-15%20at%205.08.58%20PM.png)
 
 A chrome/safari extension that takes IMDB to new frontiers
 
+```text
 Did you think Matt Damon in Titanic?
 Yes
 Was Matt Damon in Titanic?
 Yes
+```
 
+```text
 Did you think Meryl Streep in Spacejam?
 Yes
 Was Meryl Streep in Spacejam?
 Yes
+```
 
 we used all of technology. Oh. so. much. tech:
 
