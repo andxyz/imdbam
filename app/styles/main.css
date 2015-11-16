@@ -35,6 +35,16 @@ body#mypopup {
   margin-top: 6px;
 }
 
-.js-advanced-options-section .advanced-checkbox {
+.advanced-options-section, .advanced-checkbox {
   margin-top: 6px;
+}
+
+.advanced-options-section {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
