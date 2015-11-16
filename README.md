@@ -57,3 +57,15 @@ we used all of technology. Oh. so. much. tech:
 - http://stackoverflow.com/questions/7399640/jquery-select-option-in-select-box
 - https://api.jquery.com/jquery.get/
 - http://stackoverflow.com/questions/941206/jquery-add-image-inside-of-div-tag
+
+#### Built by Peter and Andrew
+
+Peter Stevens
+[twitter.com/_peterstevens](https://twitter.com/_peterstevens)
+http://www.peterstevensonline.com/
+![peter](http://www.peterstevensonline.com/img/pixel-peter-bun-2015-400x.png)
+
+Andrew Stevens
+[twitter.com/andrewstevens](https://twitter.com/andrewstevens)
+http://andxyz.com
+![andrew](http://www.gravatar.com/avatar/f8b21b8febae9625add3d58a4557e39b?s=256)
