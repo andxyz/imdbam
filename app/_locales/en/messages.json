@@ -4,7 +4,7 @@
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "imdbam toronto www.comedyhackday.org",
+    "message": "imdbam toronto www.comedyhackday.org available at https://github.com/andxyz/imdbam/releases",
     "description": "The description of the application"
   }
 }

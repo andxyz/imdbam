@@ -44,26 +44,30 @@ console.log('imdbam booting');
 
   };
 
-  App.replaceActor = function(actorOrdinal, realname, rolename, actorpic) {
+  App.replaceActor = function(actorOrdinal, realname, charactername, actorpic) {
     var actualOrdinal = ( parseInt(actorOrdinal,10) + 1 );
     console.log('imdbam placing actor at:');
     console.log(actualOrdinal);
     var actor = App.castList.find('tr:nth-child(' + actualOrdinal + ')');
 
-    var pic = actor.find('td:nth-child(1) img');
+    // replace picture
+    var picTd = actor.find('td:nth-child(1)');
+    picTd.find('a').attr('href', "#");
+    picTd.find('img').remove();
     if (!actorpic) {
-      pic.removeClass('loadlate');
-      pic.attr('src', App.noPictureSrc);
+      picTd.prepend('<img height="44" width="32" src="' + App.noPictureSrc + '" />')
+      // pic.attr('src', );
     } else {
-      pic.removeClass('loadlate');
-      pic.attr('src', actorpic);
+      picTd.prepend('<img height="44" width="32" src="' + actorpic + '" />');
     }
 
+    // replace realname
     var realnameEle = actor.find('td:nth-child(2) a span');
     realnameEle.text(realname);
 
-    var rolenameEle = actor.find('td.character a');
-    rolenameEle.text(rolename);
+    // replace character
+    var characternameEle = actor.find('td.character a');
+    characternameEle.text(charactername);
   };
 
   App.kevinBaconTheMovie = function() {

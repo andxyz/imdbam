@@ -51,3 +51,4 @@ we used all of technology. Oh. so. much. tech:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 - http://stackoverflow.com/questions/7399640/jquery-select-option-in-select-box
 - https://api.jquery.com/jquery.get/
+- http://stackoverflow.com/questions/941206/jquery-add-image-inside-of-div-tag
