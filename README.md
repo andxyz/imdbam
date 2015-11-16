@@ -60,12 +60,12 @@ we used all of technology. Oh. so. much. tech:
 
 #### Built by Peter and Andrew
 
-Peter Stevens
-[twitter.com/_peterstevens](https://twitter.com/_peterstevens)
-http://www.peterstevensonline.com/
-![peter](http://www.peterstevensonline.com/img/pixel-peter-bun-2015-400x.png)
+Peter Stevens<br>
+[twitter.com/_peterstevens](https://twitter.com/_peterstevens)<br>
+http://www.peterstevensonline.com/<br>
+![peter](http://www.peterstevensonline.com/img/pixel-peter-bun-2015-400x.png)<br>
 
-Andrew Stevens
-[twitter.com/andrewstevens](https://twitter.com/andrewstevens)
-http://andxyz.com
-![andrew](http://www.gravatar.com/avatar/f8b21b8febae9625add3d58a4557e39b?s=256)
+Andrew Stevens<br>
+[twitter.com/andrewstevens](https://twitter.com/andrewstevens)<br>
+http://andxyz.com<br>
+![andrew](http://www.gravatar.com/avatar/f8b21b8febae9625add3d58a4557e39b?s=256)<br>
