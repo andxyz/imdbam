@@ -1,7 +1,7 @@
 {
   "name": "imdbam",
   "version": "1.0.0",
-  "description": "imdbam chrome webstore/safari extension - built at the toronto comedyhackday.org",
+  "description": "imdbam chrome extension - built at the toronto comedyhackday.org",
   "author": "andxyz.com, www.peterstevensonline.com",
   "license": "MIT",
   "private": true,

@@ -7,7 +7,7 @@ It works! get it now https://github.com/andxyz/imdbam/releases/latest
 
 ![](http://cl.ly/image/0h0r3y2C2D2T/Image%202015-11-15%20at%205.08.58%20PM.png)
 
-A chrome/safari extension that takes IMDB to new frontiers
+A chrome extension (one day safari) that takes IMDB to new frontiers
 
 ```text
 Did you think Matt Damon in Titanic?
