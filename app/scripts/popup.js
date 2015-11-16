@@ -38,11 +38,14 @@ console.log('imdbam popupjs is doing this');
       url: 'https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=' + App.actorName + '+headshot+"wikipedia.com&imgsz=small',
       data: "",
       success: function success(data) {
+
         console.log('imdbam data');
         console.log(data);
         console.log('imdbam data...url');
-        console.log(data.responseData.results[0].url);
-        App.actorImgSrc = data.responseData.results[0].url;
+
+        App.actorImgSrc = data.responseData.results[0].unescapedUrl;
+        console.log(App.actorImgSrc);
+
         saveChanges();
       },
       error: saveChanges,
