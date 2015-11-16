@@ -1,4 +1,4 @@
-Toronto www.comedyhackday.org
+www.comedyhackday.org/toronto
 
 ### imdBAM I Told You So
 #### Putting Truth in the Hands of People Who Are Sure.
@@ -47,7 +47,7 @@ we used all of technology. Oh. so. much. tech:
 - http://stackoverflow.com/questions/4535816/how-to-use-font-face-on-a-chrome-extension-in-a-content-script
 - http://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
 
-#### jquery and bootstrap
+#### jquery and bootstrap and just making it work
 
 - https://api.jquery.com/remove/
 - http://api.jquery.com/on/
@@ -57,3 +57,5 @@ we used all of technology. Oh. so. much. tech:
 - http://stackoverflow.com/questions/7399640/jquery-select-option-in-select-box
 - https://api.jquery.com/jquery.get/
 - http://stackoverflow.com/questions/941206/jquery-add-image-inside-of-div-tag
+- https://developers.google.com/image-search/v1/jsondevguide?hl=en
+- https://github.com/pauloortins/knockout-bootstrap-switch/blob/master/ko.bindingHandlers.bootstrapSwitch.js

@@ -69,7 +69,7 @@ console.log('imdbam popupjs is doing this');
 
     // get a small picture of the actor from google using wikipedia as the source
     $.ajax({
-      url: 'https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=' + App.actorName + '+headshot+"wikipedia.com&imgsz=small',
+      url: 'https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=' + App.actorName + '+movie+headshot+"wikipedia.com&imgsz=small',
       data: "",
       success: function success(data) {
 
