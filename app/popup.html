@@ -14,14 +14,18 @@
   <body id="mypopup">
     <div class="container">
 
-      <div>
-        <img style="display:inline-block;" width='80' height='80' src='https://raw.githubusercontent.com/andxyz/imdbam/master/app/images/icon-128.png?q=123'>
-        <span class="main-title">imdBAM I Told You So</span>
+      <div class="row">
+        <div class="col-xs-12">
+          <img class="main-title-img" width='80' height='80'
+            src='https://raw.githubusercontent.com/andxyz/imdbam/master/app/images/icon-128.png?q=123' />
+          <div class="the-titles">
+            <span class="main-title">imdBAM I Told You So</span><br>
+            <span class="second-title">Putting Truth in the Hands of People Who Are Sure</span>
+          </div>
+        </div>
       </div>
 
-      <div class="second-title">Putting Truth in the Hands of People Who Are Sure</div>
-
-      <form class="fun-inputs">
+      <form class="fun-inputs top-fresh-air">
 
         <!-- <div class="row form-group">
           <div class='movieTitle col-xs-4'>
@@ -33,28 +37,28 @@
         </div> -->
 
         <div class="row form-group">
-          <div class='actorName col-xs-4'>
+          <div class='actorName col-xs-3'>
             Actor Name:
           </div>
-          <div class='rightside col-xs-8'>
+          <div class='rightside col-xs-9'>
             <input type='text' class="form-control js-actor-name" name="actorname" placeholder="Actor Name" value=''/>
           </div>
         </div>
 
         <div class="row form-group">
-          <div class='actorCharacter col-xs-4'>
+          <div class='actorCharacter col-xs-3'>
             Character:
           </div>
-          <div class='col-xs-8'>
+          <div class='col-xs-9'>
             <input type='text' class="form-control js-actor-character" name="actorcharacter" placeholder="Character Name" value='' />
           </div>
         </div>
 
         <div class='fun-options row form-group'>
-          <div class='characterOrdinal col-xs-4'>
+          <div class='characterOrdinal col-xs-3'>
             Position in the cast list:
           </div>
-          <div class='col-xs-6'>
+          <div class='col-xs-4'>
             <select class='js-castlist-ordinal form-control'>
               <option value='1'>1</option>
               <option value='2'>2</option>
@@ -76,23 +80,9 @@
         </div>
       </form>
 
-      <button class="btn btn-primary js-save">Save&nbsp;<span class="glyphicon glyphicon-check"></span></button>
+      <button class="btn btn-primary top-fresh-air js-save">Save&nbsp;<span class="glyphicon glyphicon-check"></span></button>
 
-      <br>
-
-      <div class="row">
-        <div class="col-xs-8">
-          <span style="color: #AA4444;">
-            WARNING: can make friends, can break friends
-          </span>
-        </div>
-      </div>
-
-      <br>
-
-      <span class="title-advanced">Advanced options:</span>
-
-      <div class="">
+      <div class="title-advanced">Advanced options:</div>
 
         <div class="row">
           <div class="col-xs-8">
@@ -100,27 +90,40 @@
           </div>
         </div>
 
-        <div class="js-advanced-options-section advanced-options-section" style="display: none;">
-          <div class='row advanced-checkbox'>
-            <div class="col-xs-3">&nbsp;&nbsp;Kevin Bacon Mode &nbsp;</div>
-            <div class="col-xs-9">
-              <input type="checkbox" name="js-kevin-bacon-mode" />
-            </div>
-          </div>
-          <div class='row advanced-checkbox'>
-            <div class="col-xs-3">&nbsp;&nbsp;Mark Little Mode &nbsp;</div>
-            <div class="col-xs-9">
-              <input type="checkbox" name="js-mark-little-mode" />
-            </div>
-          </div>
-          <div class='row advanced-checkbox'>
-            <div class="col-xs-3">&nbsp;&nbsp;Jeff Goldbloom Truther Mode &nbsp;</div>
-            <div class="col-xs-9">
-              <input type="checkbox" name="js-jeff-goldbloom-mode" />
-            </div>
+      <div class="js-advanced-options-section advanced-options-section" style="display: none;">
+        <div class='row advanced-checkbox'>
+          <div class="col-xs-4">&nbsp;&nbsp;Kevin Bacon Mode &nbsp;</div>
+          <div class="col-xs-8">
+            <input type="checkbox" name="js-kevin-bacon-mode" />
           </div>
         </div>
 
+        <div class='row advanced-checkbox'>
+          <div class="col-xs-4">&nbsp;&nbsp;Mark Little Mode &nbsp;</div>
+          <div class="col-xs-8">
+            <input type="checkbox" name="js-mark-little-mode" />
+          </div>
+        </div>
+
+        <div class='row advanced-checkbox'>
+          <div class="col-xs-4">&nbsp;&nbsp;Jeff Goldbloom Truther Mode &nbsp;</div>
+          <div class="col-xs-2">
+            <div class="js-jeff-goldbloom-mode bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on" style="width: 102px;">
+              <div class="bootstrap-switch-container" style="margin-left: 0px; width: 150px;">
+                <span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 50px;">ON</span>
+                <span class="bootstrap-switch-label" style="width: 50px;">&nbsp;</span>
+                <!-- <span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 50px;"></span> -->
+                <!-- <input type="checkbox" name="jeff-goldbloom-mode" checked> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 js-jeff-goldbloom-mode-warning" style="display: none;">
+            <span style="color: #AA4444;">
+              WARNING: <br>
+              I'm afraid I can't do that. The people must know.
+            </span>
+          </div>
+        </div>
       </div>
 
     </div><!-- end popup -->

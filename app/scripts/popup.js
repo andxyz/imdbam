@@ -24,7 +24,10 @@ console.log('imdbam popupjs is doing this');
     $("[name='js-mark-little-mode']").bootstrapSwitch();
     $("[name='js-jeff-goldbloom-mode']").bootstrapSwitch();
 
-    $("[name='js-jeff-goldbloom-mode']").bootstrapSwitch('state', true);
+    $(".js-jeff-goldbloom-mode").on('click', function () {
+      $(".js-jeff-goldbloom-mode-warning").stop();
+      $(".js-jeff-goldbloom-mode-warning").fadeIn().delay(400).fadeOut();
+    });
   };
 
   App.preloadSavedData = function () {

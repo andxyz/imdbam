@@ -4,6 +4,22 @@ html {
   font-size: 1.0em;
 }
 
+body#mypopup {
+  height: 750px;
+  width: 750px;
+  padding: 15px;
+}
+
+.main-title-img {
+  float: left;
+  margin-right: 16px;
+}
+
+.the-titles {
+  float: left;
+  padding-top: 30px;
+}
+
 .main-title {
   font-size: 30px;
   font-weight: 500;
@@ -17,12 +33,6 @@ html {
   line-height: 1.1;
 }
 
-body#mypopup {
-  height: 750px;
-  width: 750px;
-  padding: 15px;
-}
-
 .fun-inputs {
   margin-top: 8px;
 }
@@ -32,7 +42,7 @@ body#mypopup {
 }
 
 .title-advanced {
-  margin-top: 6px;
+  margin-top: 18px;
 }
 
 .advanced-options-section, .advanced-checkbox {
@@ -40,6 +50,7 @@ body#mypopup {
 }
 
 .advanced-options-section {
+  padding: 16px;
   margin-right: 0;
   margin-left: 0;
   background-color: #f7f7f9;
@@ -47,4 +58,8 @@ body#mypopup {
   border-radius: 4px;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.top-fresh-air {
+  margin-top: 24px;
 }
