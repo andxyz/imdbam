@@ -1,19 +1,40 @@
 html {
-  height: 550px;
+  height: 750px;
   width: 750px;
-  font-size: 1.1em;
+  font-size: 1.0em;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.second-title {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 body#mypopup {
-  height: 550px;
+  height: 750px;
   width: 750px;
-  padding: 40px;
+  padding: 15px;
 }
 
 .fun-inputs {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .fun-options {
-  margin-top: 10px;
+  margin-top: 8px;
+}
+
+.title-advanced {
+  margin-top: 6px;
+}
+
+.js-advanced-options-section .advanced-checkbox {
+  margin-top: 6px;
 }

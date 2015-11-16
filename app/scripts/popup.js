@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 console.log('imdbam popupjs is doing this');
 
@@ -7,23 +7,52 @@ console.log('imdbam popupjs is doing this');
   var App = App || {};
   window.App = App; // debug
 
-  loadSavedData();
+  App.init = function () {
 
-  $('.js-save').on('click', function () {
-    console.log('imdbam begin saving');
-    prepareToSaveChanges();
-    console.log('imdbam finished saving');
-  });
+    App.setupTheLook();
 
-  function loadSavedData() {
+    App.preloadSavedData();
+
+    App.setupOnClicks();
+  };
+
+  App.setupTheLook = function () {
+
+    $("[name='js-advanced-option-switch']").bootstrapSwitch();
+
+    $("[name='js-kevin-bacon-mode']").bootstrapSwitch();
+    $("[name='js-mark-little-mode']").bootstrapSwitch();
+    $("[name='js-jeff-goldbloom-mode']").bootstrapSwitch();
+  };
+
+  App.preloadSavedData = function () {
+
     chrome.storage.local.get(['actorName', 'actorCharacter', 'castlistOrdinal'], function (loadedItems) {
       $('.js-actor-name').val(loadedItems.actorName);
       $('.js-actor-character').val(loadedItems.actorCharacter);
       $('.js-castlist-ordinal').val(loadedItems.castlistOrdinal);
     });
-  }
+  };
 
-  function prepareToSaveChanges() {
+  App.setupOnClicks = function () {
+
+    $('.js-save').on('click', function () {
+      console.log('imdbam begin saving');
+      App.prepareToSaveChanges();
+      console.log('imdbam finished saving');
+    });
+
+    $("[name='js-advanced-option-switch']").on('switchChange.bootstrapSwitch', function (event, state) {
+      if (state) {
+        $('.js-advanced-options-section').stop().show();
+      } else {
+        $('.js-advanced-options-section').stop().hide();
+      }
+    });
+  };
+
+  App.prepareToSaveChanges = function () {
+
     // Get a value saved in a form.
 
     // var movieTitle = $('.js-movie-title').val();
@@ -46,16 +75,17 @@ console.log('imdbam popupjs is doing this');
         App.actorImgSrc = data.responseData.results[0].unescapedUrl;
         console.log(App.actorImgSrc);
 
-        saveChanges();
+        App.saveChanges();
       },
-      error: saveChanges,
+      error: App.saveChanges,
       dataType: 'json'
     });
     console.log('imdbam saving image named');
     console.log(App.actorImgSrc);
-  }
+  };
 
-  function saveChanges() {
+  App.saveChanges = function () {
+
     // Save it using the Chrome extension storage API.
     // see https://developer.chrome.com/extensions/storage
     chrome.storage.local.set({
@@ -70,5 +100,10 @@ console.log('imdbam popupjs is doing this');
       // }
     });
   };
+
+  $(document).ready(function () {
+
+    App.init();
+  });
 })(jQuery, _);
 //# sourceMappingURL=popup.js.map

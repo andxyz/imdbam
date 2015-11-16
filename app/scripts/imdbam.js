@@ -78,7 +78,7 @@ console.log('imdbam booting');
 
     //change actors
     _.each([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], function(ordinal) {
-        App.replaceActor(ordinal, 'Kevin Bacon', 'Kevin Bacon', App.noPictureSrc);
+        App.replaceActor(ordinal, 'Kevin Bacon', 'Kevin Bacon', App.kevinBaconPicSrc);
     });
   };
 
@@ -86,6 +86,8 @@ console.log('imdbam booting');
     App.castList = $('table.cast_list');
     App.movieTitle = $('h1.header span');
     App.noPictureSrc = 'http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/32x44/name-2138558783._CB379389446_.png';
+    App.kevinBaconPicSrc = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Kevin_Bacon_SDCC_2014.jpg/72px-Kevin_Bacon_SDCC_2014.jpg';
+
     // var junk = castList.find('tr:nth-child('+actorOrdinal+')');
   };
 
@@ -118,7 +120,9 @@ console.log('imdbam booting');
   };
 
   $(document).ready(function(){
-      App.init();
+
+    App.init();
+
   });
 
 })(jQuery, _);

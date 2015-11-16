@@ -1,20 +1,21 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/bootstrap-theme.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/bootstrap-theme.css" />
+    <link rel="stylesheet" href="styles/bootstrap-switch.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body id="mypopup">
     <div class="container">
 
-      <img width='128' height='128' src='https://raw.githubusercontent.com/andxyz/imdbam/master/app/images/icon-128.png?q=123'>
-      <h2>imdBAM I Told You So</h2>
-      <h4>Putting Truth in the Hands of People Who Are Sure</h4>
+      <div>
+        <img style="display:inline-block;" width='80' height='80' src='https://raw.githubusercontent.com/andxyz/imdbam/master/app/images/icon-128.png?q=123'>
+        <span class="main-title">imdBAM I Told You So</span>
+      </div>
 
-      <br>
-      <br>
+      <div class="second-title">Putting Truth in the Hands of People Who Are Sure</div>
 
       <form class="fun-inputs">
 
@@ -72,20 +73,53 @@
       </form>
 
       <button class="btn btn-primary js-save">Save&nbsp;<span class="glyphicon glyphicon-check"></span></button>
-    </div>
 
-    <br><br><br>
-    <div class="row">
-      <div class="col-xs-8">
-        <span style="color: #AA4444;">
-          WARNING: can make friends, can break friends
-        </span>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-8">
+          <span style="color: #AA4444;">
+            WARNING: can make friends, can break friends
+          </span>
+        </div>
       </div>
+
+      <br>
+
+      <span class="title-advanced">Advanced options:</span>
+
+      <div class="row">
+        <div class="col-xs-8">
+          <input type="checkbox" name="js-advanced-option-switch" />
+        </div>
+      </div>
+
+      <div class="js-advanced-options-section" style="display: none;">
+        <div class='row advanced-checkbox'>
+          <div class="col-xs-3">&nbsp;&nbsp;Kevin Bacon Mode &nbsp;</div>
+          <div class="col-xs-9">
+            <input type="checkbox" name="js-kevin-bacon-mode" />
+          </div>
+        </div>
+        <div class='row advanced-checkbox'>
+          <div class="col-xs-3">&nbsp;&nbsp;Mark Little Mode &nbsp;</div>
+          <div class="col-xs-9">
+            <input type="checkbox" name="js-mark-little-mode" />
+          </div>
+        </div>
+        <div class='row advanced-checkbox'>
+          <div class="col-xs-3">&nbsp;&nbsp;Jeff GoldBloom Mode &nbsp;</div>
+          <div class="col-xs-9">
+            <input type="checkbox" name="js-jeff-goldbloom-mode" /> (Yes this is how you spell jeff goldbloom)
+          </div>
+        </div>
+      </div>
+
     </div>
-    <br><br><br>
 
     <script type='text/javascript' src='scripts/vendor/jquery.min.js'></script>
     <script type='text/javascript' src='scripts/vendor/underscore.js'></script>
+    <script type='text/javascript' src='scripts/vendor/bootstrap-switch.js'></script>
     <script type='text/javascript' src='scripts/popup.js'></script>
   </body>
 </html>
