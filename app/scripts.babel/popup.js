@@ -21,11 +21,12 @@ console.log('imdbam popupjs is doing this');
 
     $("[name='js-kevin-bacon-mode']").bootstrapSwitch();
     $("[name='js-mark-little-mode']").bootstrapSwitch();
-    $("[name='js-jeff-goldbloom-mode']").bootstrapSwitch();
+    // $("[name='js-jeff-goldbloom-mode']").bootstrapSwitch();
 
     $(".js-jeff-goldbloom-mode").on('click', function() {
-      $(".js-jeff-goldbloom-mode-warning").stop();
-      $(".js-jeff-goldbloom-mode-warning").fadeIn().delay(400).fadeOut();
+      $(".js-jeff-goldbloom-mode-warning")
+        .clearQueue().stop()
+        .fadeIn().delay(400).fadeOut();
     });
 
   };
