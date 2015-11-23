@@ -3,7 +3,9 @@ Toronto www.comedyhackday.org
 ### imdBAM I Told You So
 #### Putting Truth in the Hands of People Who Are Sure.
 
-It works! get it now https://github.com/andxyz/imdbam/releases/latest
+It works! get it now in the chrome webstore https://chrome.google.com/webstore/detail/imdbam-i-told-you-so/gchajejekkfeejmbhcdnpolkplinhaca?hl=en
+
+(or to install a non-updating/developer version go here https://github.com/andxyz/imdbam/releases/latest)
 
 ![](http://cl.ly/image/0h0r3y2C2D2T/Image%202015-11-15%20at%205.08.58%20PM.png)
 
