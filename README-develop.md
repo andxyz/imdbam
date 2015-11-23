@@ -21,6 +21,11 @@
 - http://stackoverflow.com/questions/7128607/chrome-extension-popup-windows-height
 - http://stackoverflow.com/questions/4535816/how-to-use-font-face-on-a-chrome-extension-in-a-content-script
 - http://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
+- https://developer.chrome.com/extensions/pageAction
+- https://developer.chrome.com/extensions/events#property-UrlFilter-schemes
+- http://stackoverflow.com/questions/20855956/how-to-show-chrome-extension-on-certain-domains
+- http://stackoverflow.com/questions/22309283/regex-in-chrome-declarativecontent-pagestatematcher
+- https://developer.chrome.com/extensions/runtime#event-onInstalled
 
 #### jquery and bootstrap
 

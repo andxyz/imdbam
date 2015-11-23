@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "1.0.166",
+  "version": "1.0.170",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -21,6 +21,18 @@
         "https://www.imdb.com/*",
         "http://www.imdb.com/*"
       ],
+      "css": [],
+      "js": [
+        "scripts/vendor/jquery.min.js",
+        "scripts/vendor/underscore.js",
+        "scripts/imdbam.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://imdbam-popup.andxyz.com/*"
+      ],
+      "//": "this includes the css and js files into the extension but will not load them into any real webpages",
       "css": [
         "styles/bootstrap.css",
         "styles/bootstrap-theme.css",
@@ -29,7 +41,6 @@
       "js": [
         "scripts/vendor/jquery.min.js",
         "scripts/vendor/underscore.js",
-        "scripts/imdbam.js",
         "scripts/popup.js"
       ]
     }
@@ -39,7 +50,8 @@
   ],
   "permissions": [
     "https://ajax.googleapis.com/",
-    "storage"
+    "storage",
+    "declarativeContent"
   ],
   "page_action": {
     "default_icon": {
