@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "imdBAM: I Told you So",
+    "message": "imdBAM: I Told You So",
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "imdBAM made at www.comedyhackday.org/toronto available at https://chrome.google.com/webstore/detail/imdbam/gchajejekkfeejmbhcdnpolkplinhaca",
+    "message": "imdBAM made at www.comedyhackday.org/toronto by http://andxyz.com and http://peterstevensonline.com/",
     "description": "The description of the application"
   }
 }
