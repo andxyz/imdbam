@@ -1,5 +1,9 @@
 # Readme for working on the app
 
+the app stopped working because google turned off their image search api
+here are some people discussing it
+https://github.com/hubot-scripts/hubot-google-images/issues/29
+
 #### very important random links
 
 - https://developer.mozilla.org/en/docs/Web/HTML/Element/iframe
@@ -47,7 +51,6 @@ grunt debug
 grunt watch
 grunt build
 ```
-
 
 ```json
 "background": {
